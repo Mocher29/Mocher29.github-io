@@ -40,6 +40,56 @@ section {
   padding: 10px 100px 10px 100px;
 }
 
+#pesan {
+  float: left;
+  width: 400px;
+  height: 100vh;
+  background: #04d9e0;
+  overflow-y: auto;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
+
+#map {
+  float: left;
+  width: calc(100% - 400px);
+  height: 100vh;
+}
+
+#title {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.inner {
+  padding: 10px;
+}
+
+#detail {
+  display: none;
+  margin-top: 50px;
+}
+
+#detail th {
+  padding: 10px;
+}
+
+#detail td {
+  padding: 10px;
+}
+
+#pesan-btn {
+  display: block;
+  margin: auto;
+}
+
+h6 {
+  padding-top: 100px;
+  font-size: 60px;
+}
+
 footer {
   background-color: #04d9e0;
 }

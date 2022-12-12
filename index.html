@@ -121,12 +121,62 @@
     </section>    
     <!-- Akhir Kost -->
 
+    <!-- Awal Peta Digital -->
+    <section id="Gmaps" class="maps">
+      <div id="pesan">
+        <div class="inner">
+            <h4 id="title">Pencarian Jalan Kost</h4>
+            <form>
+                <div class="form-group">
+                    <label>Masukkan Lokasi Anda</label>
+                    <input type="text" class="form-control" id="start" placeholder="Jl. Mayjend Ahmad Yani" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Masukkan Lokasi Tujuan</label>
+                    <input type="text" class="form-control" id="end" placeholder="Jl. Semarang" required>
+                </div>
+                <input type="submit" class="btn btn-success" id="pesan-btn" value="Pesan">
+            </form>
+
+            <div id="detail">
+                <hr />
+                <h4>Detail Pesanan</h4>
+                <div class="card-custom">
+                    <table>
+                        <tr>
+                            <th>Jarak</th>
+                            <th>:</th>
+                            <td id="distance"></td>
+                        </tr>
+                        <tr>
+                            <th>Durasi</th>
+                            <th>:</th>
+                            <td id="duration"></td>
+                        </tr>
+                        <tr>
+                            <th>Harga</th>
+                            <th>:</th>
+                            <td id="price"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div id="map"></div>
+
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS3jgLVy9icJALbDTNZiYcDtSU9-8kMpI&libraries=places"></script>
+      <script src="script.js"></script>
+    </section>
+    <!-- Akhir Peta Digital -->
+
     <!-- Contact Us -->
     <section id="contact">
         <div class="container">
             <div class="row text-center mb-3">
                 <div class="col">
-                    <h4>Ada pertanyaan lebih lanjut? Hubungi kami</h4>
+                    <h5>Ada pertanyaan lebih lanjut? Hubungi kami</h5>
                 </div>
             </div>
             <div class="row justify-content-center">
@@ -142,7 +192,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="3"></textarea>
+                            <textarea class="form-control" id="kpesan" rows="3"></textarea>
                           </div>
                         <link rel="stylesheet" href=""> <button type="submit" class="btn btn-primary">Kirim</button>
                       </form>
